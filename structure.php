@@ -38,66 +38,6 @@ add_action( 'init', 'create_toptrumps_tax' );
 
 //add any necessary custom fields
 if( function_exists('acf_add_local_field_group') ):
-//for later if I can dynamically populate fields though custom taxonomy page
-/*acf_add_options_sub_page(array(
-	'title'      => 'Top Trumps Settings',
-	'parent'     => 'edit.php?post_type=toptrumps',
-	'capability' => 'manage_options'
-));
-
-acf_add_local_field_group(array (
-	'key' => 'toptrumps_extra_fields',
-	'title' => 'Top Trumps Options',
-	'fields' => array (
-		array (
-			'key' => 'toptrumps_deck_title',
-			'label' => 'Title of this deck of Top Trumps',
-			'name' => 'toptrumps-title',
-			'type' => 'text',
-		),
-		array (
-			'key' => 'toptrumps_header_text',
-			'label' => 'Description of this deck of Top Trumps',
-			'name' => 'toptrumps-text',
-			'type' => 'wysiwyg',
-			'instructions' => 'Description text will be shown on top trumps archive page',
-		),
-		array (
-			'key' => 'toptrumps_number_columns',
-			'label' => 'Number of Duelling Parameters',
-			'name' => 'toptrumps_number_duelling_parameters',
-			'type' => 'select',
-			'instructions' => '',
-			'choices' => array (
-				'4' => '4',
-				'5' => '5',
-				'6' => '6',
-				'7' => '7',
-			),
-			'default_value' => array (
-				0 => '4',
-			),
-		),
-	),
-	'location' => array (
-		array (
-			array (
-				'param' => 'options_page',
-				'operator' => '==',
-				'value' => 'acf-options-top-trumps-settings',
-			),
-		),
-	),
-	'menu_order' => 0,
-	'position' => 'normal',
-	'style' => 'default',
-	'label_placement' => 'top',
-	'instruction_placement' => 'label',
-	'hide_on_screen' => '',
-	'active' => 1,
-	'description' => '',
-));*/
-
 acf_add_local_field_group(array (
 	'key' => 'group_toptrump_parameters',
 	'title' => 'Top Trump Duelling Parameters',

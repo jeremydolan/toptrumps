@@ -8,13 +8,6 @@ function toptrumps_display_function($atts, $content = null){
 	//does the player already have a game they're in?
 	$user_id = get_current_user_id();
 	
-	//is it this player's turn? true/false
-	//who are the players? array()
-	/*$player_array = array(	
-		'player_turn' => 1,
-		'players' => array('2','3')
-	);*/
-	
 	ob_start();
 		//is player logged in?
 		if ( is_user_logged_in() ):
